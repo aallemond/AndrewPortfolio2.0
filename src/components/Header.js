@@ -1,21 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, NavLink } from "react-bootstrap";
+import { BrowserRouter, Link } from "react-router-dom";
+import { Navbar, Nav, Container, NavLink, NavbarBrand } from "react-bootstrap";
+
+
 
 
 
 const Header = () => {
     return(
+  
         <Navbar bg="light" data-bs-theme="light">
             <Container>
-                <Nav href="#Home">Andrew Allemond</Nav>
+                <NavbarBrand>Andrew Allemond</NavbarBrand>
                 <Nav className="flex-row-reverse">
-                    <NavLink href='#Projects'>Projects</NavLink>
-                    <NavLink href='#Contact'>Contact Me</NavLink>
-                    <NavLink href="#About">About Me</NavLink>
+                    <Nav.Link as={Link} to='/projects'>Projects</Nav.Link>
+                    <Nav.Link as={Link}to='/contact'>Contact Me</Nav.Link>
+                    <NavLink as={Link}to='/'>About Me</NavLink>
                 </Nav>
             </Container>
         </Navbar>
+       
     )
 }
 
