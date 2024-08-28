@@ -5,12 +5,12 @@ import { Image, Container, Row, Col} from "react-bootstrap";
 
 const Home = () => {
     return(
-        <body>
+        <div>
         <Container>
             <Row>
-                
-                <Col>
-                    <Image src='https://res.cloudinary.com/dxnwbl21t/image/upload/v1724797911/IMG_9760_jqajpf.png' fluid/>
+
+                <Col mt-5>
+                    <Image src='https://res.cloudinary.com/dxnwbl21t/image/upload/v1724797911/IMG_9760_jqajpf.png' fluid rounded/>
                  </Col>
 
                  <Col>
@@ -22,14 +22,14 @@ const Home = () => {
                         Praesent varius id enim ac facilisis. Proin eget lorem ante. Suspendisse laoreet convallis nulla. Nulla ullamcorper feugiat consectetur. Maecenas eu fermentum diam, sed sollicitudin tellus. Nullam porta, metus ut vehicula pellentesque, est purus gravida odio, in mattis velit nibh sit amet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur tincidunt est sit amet viverra tincidunt. Nulla venenatis felis in erat porttitor, ac luctus quam fringilla. Quisque aliquam a erat id hendrerit. Nunc non libero vel orci iaculis scelerisque. Vivamus porttitor consectetur pretium. Maecenas vitae est velit.
                     </p>
                  </Col>
-
+            
             </Row>
         </Container>
 
        
 
        
-        </body>
+        </div>
     )
 }
 
